@@ -186,6 +186,8 @@ The folllowing code supresses display of R input commands (i.e., `echo=FALSE`) a
     5 5 5.96
     6 6 5.89
 
+I also highly reccomend reviewing the `kable` function in the `printr` package [here](http://yihui.name/printr/) for pretty printing.
+
 ### Control figure size
 
 The following is an example of a smaller figure using `fig.width` and `fig.height` options.
@@ -240,13 +242,7 @@ and nested dot points:
 
 Equations are included by using LaTeX notation and including them either between single dollar signs (inline equations) or double dollar signs (displayed equations). If you hang around the Q&A site [CrossValidated](http://stats.stackexchange.com) you'll be familiar with this idea.
 
-There are inline equations such as \(y_i = \alpha + \beta x_i + e_i\).
-
-And displayed formulas:
-
-\[\frac{1}{1+\exp(-x)}\]
-
-knitr provides self-contained HTML code that calls a Mathjax script to display formulas. However, in order to include the script in my blog posts I [took the script](https://gist.github.com/2716053) and incorporated it into my blogger template. If you are viewing this post through syndication or an RSS reader, this may not work. You may need to view this post on my website.
+I added JavaScript from [this gist](https://gist.github.com/2716053) to get the follwoing inline equation to work: \(y_i = \alpha + \beta x_i + e_i\).
 
 ### Tables
 
@@ -259,7 +255,7 @@ Tables can be included using the following notation
 
 ### Hyperlinks
 
--   If you like this post, you may wish to subscribe to [my RSS feed](http://feeds.feedburner.com/jeromyanglim).
+-   If you like this post, you may wish to subscribe to [Jeremy's RSS feed](http://feeds.feedburner.com/jeromyanglim), or [my blog](http://danielphadley.com/).
 
 ### Images
 
@@ -305,22 +301,3 @@ Conclusion
     -   [Markcus Gesmann](http://lamages.blogspot.com.au/2012/05/interactive-reports-in-r-with-knitr-and.html)
     -   [Rstudio on R Markdown](http://rstudio.org/docs/authoring/using_markdown)
     -   [Yihui Xie](http://yihui.name/knitr/): I really want to thank him for developing `knitr`. He has also posted [this example of R Markdown](https://github.com/yihui/knitr/blob/master/inst/examples/knitr-minimal.Rmd).
-
-Questions
----------
-
-The following are a few questions I encountered along the way that might interest others. \#\#\# Annoying `<br/>`'s **Question:** I asked on the Rstudio discussion site: [Why does Markdown to HTML insert `<br/>` on new lines?](http://support.rstudio.org/help/discussions/problems/2329-why-does-r-markdown-to-html-insert-br-when-there-is-a-new-line-of-text)
-
-**Answer:** I just do a find and delete on this text for now.
-
-### Temporarily disable caching
-
-**Question:** I asked on StackOverflow about [How to set cache=FALSE for a knitr markdown document and override code chunk settings?](http://stackoverflow.com/q/10628665/180892)
-
-**Answer:** Delete the cache folder. But there are other possible workflows.
-
-### Equivalent of Sexpr
-
-**Question:** I asked on Stack Overvlow about [whether there an R Markdown equivalent to Sexpr in Sweave?](http://stackoverflow.com/q/10629416/180892).
-
-**Answer:** Include the code between brackets of "backick r space" and "backtick". E.g., in the source code I have calculated 2 + 2 = 4 .
