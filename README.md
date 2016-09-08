@@ -1,2 +1,2 @@
 # Example-R-Markdown-on-Github
-An Example of Sharing your R Markdown on Github
+An Example of Sharing your R Markdown on Github. Thanks to [Jeromy Anglim](https://gist.github.com/jeromyanglim) for an [earlier example](https://gist.github.com/jeromyanglim/2716336) of R Markdown, which served as the basis of this example.  
